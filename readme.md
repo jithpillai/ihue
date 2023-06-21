@@ -1,4 +1,4 @@
-# Ihue Website
+# ihue Website
 
 ## Usage
 
