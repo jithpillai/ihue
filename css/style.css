@@ -34,8 +34,6 @@
 
 html {
   line-height: 1.5;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
   /* 2 */
   -moz-tab-size: 4;
   /* 3 */
@@ -564,19 +562,36 @@ h5 {
   }
 }
 
-body {
-  background-image: url('../images/bg-header-desktop.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-@media (max-width: 576px) {
-  body {
-    background-image: url('../images/bg-header-mobile.png');
-  }
-}
-
 .ficon:hover {
   filter: invert(53%) sepia(68%) saturate(434%) hue-rotate(121deg)
     brightness(101%) contrast(94%);
+}
+
+.main-logo {
+  background: url("../images/ihue_black.png") no-repeat center;
+  height: 450px;
+  background-size: contain;
+}
+body.dark-mode {
+  background: black;
+}
+.dark-mode .main-logo {
+  background: url("../images/ihue_white.png") no-repeat center;
+  background-size: contain;
+}
+.dark-mode .section-container h3{
+  color: white !important;
+}
+.theme-toggle {
+  margin: 2px;
+  margin-right: 20px;
+  width: 48px;
+  height: 48px;
+  float: right;
+  background: url(../images/moon.png) no-repeat;
+  background-size: contain;
+}
+.dark-mode .theme-toggle {
+  background: url(../images/sun.svg) no-repeat;
+  background-size: contain;
 }

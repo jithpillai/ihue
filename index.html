@@ -15,12 +15,21 @@
     <title>iHue</title>
   </head>
   <body>
+    <script>
+      function toggleDarkMode() {
+         var element = document.body;
+         element.classList.toggle("dark-mode");
+      }
+      </script>
+    <button class="theme-toggle" id="theme-toggle" title="Toggles light & dark" aria-label="auto" aria-live="polite"
+      onclick="toggleDarkMode()">
+    </button>
     <!-- Hero Section -->
     <section id="hero">
-      <div class="section-container mb-40 pt-32">
-        <img src="images/ihue.png" alt="iHue" width="300px" class="mx-auto mt-16" />
+      <div class="section-container mb-40 pt-8">
+        <div alt="iHue" class="main-logo mx-auto mt-16"></div>
 
-        <h3>A color for every technology</h3>
+        <h3>Adds hue to insight</h3>
       </div>
     </section>
   </body>
