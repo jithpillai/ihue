@@ -616,3 +616,10 @@ body.dark-mode {
 .color-amber{
   color: #FFBF00 !important;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .main-logo {
+    margin-top: 5px !important;
+  }
+}
