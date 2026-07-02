@@ -617,9 +617,87 @@ body.dark-mode {
   color: #FFBF00 !important;
 }
 
+.huegames-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  min-height: 68px;
+  padding: 12px 24px;
+  color: #172033;
+  background: linear-gradient(105deg, #c9f45c 0%, #f4ef6b 48%, #ff9e89 100%);
+  border-bottom: 1px solid rgba(23, 32, 51, 0.14);
+  text-decoration: none;
+  transition: filter 180ms ease;
+}
+
+.huegames-banner:hover {
+  filter: saturate(1.12) brightness(1.02);
+}
+
+.huegames-banner:focus-visible {
+  outline: 3px solid #7658ed;
+  outline-offset: -3px;
+}
+
+.huegames-banner__badge {
+  padding: 5px 10px;
+  color: #fff;
+  background: #172033;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.huegames-banner__copy {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.huegames-banner__copy strong {
+  font-size: 1.02rem;
+}
+
+.huegames-banner__copy > span {
+  color: rgba(23, 32, 51, 0.76);
+  font-size: 0.9rem;
+}
+
+.huegames-banner__action {
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.dark-mode .huegames-banner {
+  color: #172033;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .main-logo {
     margin-top: 5px !important;
+  }
+
+  .huegames-banner {
+    justify-content: space-between;
+    gap: 10px;
+    padding: 11px 14px;
+  }
+
+  .huegames-banner__copy {
+    display: block;
+    line-height: 1.2;
+  }
+
+  .huegames-banner__copy > span {
+    display: none;
+  }
+
+  .huegames-banner__action {
+    font-size: 0.86rem;
   }
 }
