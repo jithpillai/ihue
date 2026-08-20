@@ -667,12 +667,31 @@ body.dark-mode {
 }
 
 .promo-banner__action {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   font-weight: 800;
   white-space: nowrap;
 }
 
 .dark-mode .promo-banner {
   color: #172033;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#hero {
+  flex: 1 0 auto;
+}
+
+.promo-banner--footer {
+  margin-top: 40px;
+  border-bottom: none;
+  border-top: 1px solid rgba(23, 32, 51, 0.14);
 }
 
 .huegames-banner {
